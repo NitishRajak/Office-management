@@ -1,0 +1,48 @@
+{
+  "name": "meose-backend",
+  "version": "1.0.0",
+  "description": "Backend for Meose with authentication",
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon server.ts",
+    "dev": "ts-node server.ts",
+    "dev:watch": "nodemon --exec ts-node server.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-docdb": "^3.777.0",
+    "@aws-sdk/client-ec2": "^3.779.0",
+    "@aws-sdk/client-lambda": "^3.777.0",
+    "@aws-sdk/client-s3": "^3.779.0",
+    "@aws-sdk/client-ssm": "^3.777.0",
+    "@aws-sdk/util-waiter": "^3.374.0",
+    "@types/express": "^5.0.1",
+    "axios": "^1.8.4",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "simple-git": "^3.27.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/bcryptjs": "^2.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.5.7",
+    "eslint": "^9.24.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.29.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
