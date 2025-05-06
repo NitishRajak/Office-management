@@ -121,7 +121,6 @@ export const createEmployee = async (
       password,
     } = req.body;
 
-    // Check if email already exists
     const emailExists = await Employee.findOne({ email });
 
     if (emailExists) {
